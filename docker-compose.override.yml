@@ -1,0 +1,19 @@
+services:
+  postgres_etl:
+    image: postgres:13
+
+    container_name: postgres_etl_db
+
+    environment:
+      POSTGRES_USER: airflow_user
+      POSTGRES_PASSWORD: airflow_pass
+      POSTGRES_DB: weather_db
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - postgres_etl_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_etl_data:
