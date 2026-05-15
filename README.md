@@ -16,6 +16,7 @@ Your Astro project contains the following files and folders:
 - requirements.txt: Install Python packages needed for your project by adding them to this file. It is empty by default.
 - plugins: Add custom or community plugins for your project to this file. It is empty by default.
 - airflow_settings.yaml: Use this local-only file to specify Airflow Connections, Variables, and Pools instead of entering them in the Airflow UI as you develop DAGs in this project.
+- override docker file may or may not be needed in the project, GLobal config with docker can also be used.
 
 Deploy Your Project Locally
 ===========================
